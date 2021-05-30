@@ -1,0 +1,179 @@
+.header {
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0 45px;
+  }
+
+  &__aside {
+    display: flex;
+  }
+}
+
+.menu {
+  display: flex;
+  align-self: center;
+  margin-bottom: 10px;
+  padding-left: 8%;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    margin-right: 37px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    color: $header-nav;
+    font-size: 15px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: color 0.7s, border-color 0.7s;
+
+    &:hover {
+      color: $black;
+      border-bottom: 1px solid $black;
+    }
+  }
+
+  &__link--active {
+    color: $black;
+    border-bottom: 1px solid $black;
+  }
+}
+
+.bar {
+  &__btn {
+    display: flex;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+
+    svg circle {
+      fill: $accent;
+      transition: fill 0.7s;
+    }
+
+    svg path {
+      fill: $white;
+      fill-rule: evenodd;
+    }
+
+    &:hover circle {
+      fill: $bar-btn-hover;
+    }
+  }
+
+  &__btn--search {
+    margin-right: 20px;
+
+    svg circle {
+      fill: $bar-btn-search;
+      transition: fill 0.7s;
+    }
+
+    svg path {
+      fill: $bar-icon;
+      fill-rule: evenodd;
+      transition: fill 0.7s;
+    }
+
+    &:hover circle {
+      fill: $bar-btn-hover;
+    }
+
+    &:hover path {
+      fill: $white;
+    }
+  }
+
+  &__link {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: background-color 0.7s;
+
+    &:hover {
+      background-color: $bar-btn-hover;
+    }
+
+    & path {
+      transition: fill 0.7s;
+    }
+
+    &:hover path {
+      fill: $white;
+    }
+  }
+
+  &__link--left {
+    border-radius: 22px 0 0 22px;
+  }
+
+  &__link--right {
+    border-radius: 0 22px 22px 0;
+  }
+
+  &__svg {
+    path {
+      fill: $bar-icon;
+      fill-rule: evenodd;
+    }
+
+    position: absolute;
+    top: 55%;
+    left: 46%;
+    transform: translatey(-50%)
+  }
+
+  &__svg--right {
+    left: 31%;
+  }
+
+  &__num {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: $white;
+    border-radius: 50%;
+    top: 12px;
+    right: 21px;
+    font-size: 10px;
+    color: $bar-icon;
+    text-align: center;
+    line-height: 16px;
+  }
+
+  &__num--right {
+    right: 35px;
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    background-color: $bar-bg;
+    border-radius: 22px;
+    margin-right: 16px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 30px;
+      background-color: $bar-decor;
+      left: 50%;
+      transform: translatey(30%);
+    }
+  }
+}
