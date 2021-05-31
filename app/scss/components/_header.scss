@@ -68,7 +68,7 @@
     }
 
     &:hover circle {
-      fill: $bar-btn-hover;
+      fill: $header-nav;
     }
   }
 
@@ -87,7 +87,7 @@
     }
 
     &:hover circle {
-      fill: $bar-btn-hover;
+      fill: $header-nav;
     }
 
     &:hover path {
@@ -103,7 +103,7 @@
     transition: background-color 0.7s;
 
     &:hover {
-      background-color: $bar-btn-hover;
+      background-color: $header-nav;
     }
 
     & path {
