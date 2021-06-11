@@ -1,0 +1,176 @@
+.article {
+  z-index: 2;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 19px;
+  }
+
+  &__link-view {
+    position: relative;
+    font-size: 16px;
+    margin: 0 25px 0 0;
+    padding: 0 0 19px;
+    transition: color 0.4s;
+
+    &:hover {
+      color: $accent;
+
+      .icon {
+        fill: $accent;
+      }
+    }
+  }
+
+  .icon {
+    position: absolute;
+    top: 9px;
+    right: -27px;
+    width: 10px;
+    height: 12px;
+    transition: fill 0.4s;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+  }
+
+  &__item {
+    max-width: 370px;
+    width: 100%;
+    background-color: $white;
+  }
+
+  &__box-img {
+    overflow: hidden;
+    max-width: 370px;
+    width: 100%;
+    height: 250px;
+  }
+
+  &__link-img {
+    width: 370px;
+    height: 250px;
+  }
+
+  &__img {
+    object-fit: cover;
+    transition: transform 5s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__desc {
+    position: relative;
+    padding: 30px 30px 17px;
+  }
+
+  &__btn {
+    position: absolute;
+    top: -18px;
+    left: 28px;
+    border-radius: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    background-color: #a3bbc8;
+    padding: 0px 32px;
+    transition: background-color 0.4s;
+
+    &:hover {
+      background-color: $header-nav;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    max-width: 300px;
+    width: 100%;
+    color: $black;
+    margin-bottom: 24px;
+  }
+
+  &__text--margin {
+    margin-bottom: 47px;
+  }
+
+  &__bottom {
+    text-transform: uppercase;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 223px;
+    width: 100%;
+  }
+
+  &__data {
+    position: relative;
+    padding-left: 15px;
+    color: $black;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: 10px;
+      left: 4px;
+      background-image: url("../images/icons/calendar.svg");
+    }
+  }
+
+  &__link-admin {
+    position: relative;
+    color: $black;
+    transition: color 0.4s;
+  }
+
+  &__link-admin--first {
+    &:hover {
+      color: $accent;
+      .icon-admin {
+        fill: $accent;
+      }
+    }
+  }
+
+  &__link-admin--second {
+    &:hover {
+      color: $accent;
+
+      .icon-admin {
+        fill: $accent;
+      }
+    }
+  }
+
+  &__link-admin--tirdth {
+    &:hover {
+      color: $accent;
+
+      .icon-admin {
+        fill: $accent;
+      }
+    }
+  }
+
+
+}
+
+.icon-admin {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 10px;
+  left: -15px;
+  fill: $black;
+  transition: fill 0.4s;
+}

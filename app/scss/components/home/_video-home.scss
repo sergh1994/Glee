@@ -1,0 +1,59 @@
+.video {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6e6;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 120px;
+
+  &__title {
+    font-size: 0;
+  }
+
+  &__popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: $accent;
+    animation: pulse 1.5s infinite;
+    animation-timing-function: revert;
+    transition: background-color 0.4s;
+    &:hover {
+      background-color: $header-nav;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+        
+      }
+
+      70% {
+        transform: scale(0.9);
+        
+      }
+
+      100% {
+        transform: scale(0.9);
+        opacity: 0.9;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+

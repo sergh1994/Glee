@@ -1,0 +1,81 @@
+.design {
+  margin-bottom: 120px;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 34px;
+  }
+
+  &__item {
+    position: relative;
+    font-weight: 700;
+    max-width: 370px;
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 40px 105px 125px 35px;
+    overflow: hidden;
+  }
+
+  &__item--chair {
+    padding: 40px 150px 125px 35px;
+  }
+
+  &__title {
+    display: block;
+    font-size: 20px;
+    color: $black;
+    line-height: 26px;
+    transition: color 0.4s;
+
+    &:hover {
+      color: $accent;
+    }
+  }
+
+  &__desc {
+    font-size: 16px;
+    color: #d0dce2;
+  }
+
+  &__box-img {
+    position: absolute;
+    right: -77px;
+    bottom: 35px;
+  }
+
+  &__box-img--second {
+    right: -43px;
+    bottom: 37px;
+  }
+
+  &__box-img--third {
+    right: 57px;
+    bottom: 46px;
+  }
+
+  &__box-img--fourth {
+    right: -40px;
+    bottom: 29px;
+  }
+
+  &__box-img--fifth {
+    right: 31px;
+    bottom: 29px;
+  }
+
+  &__box-img--sixth {
+    right: -147px;
+    bottom: 29px;
+  }
+
+  &__img {
+    
+  }
+
+}
+
+.title--design {
+  margin-bottom: 25px;
+}

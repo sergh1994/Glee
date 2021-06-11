@@ -1,5 +1,4 @@
 .footer {
-  background-color: $white;
   font-family: 'Rubik', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -7,13 +6,13 @@
   color: $footer-link;
 
   &__items {
-    padding: 80px 0 65px 0;
-    margin-bottom: 30px;
-    border-bottom: 1px solid $footer-border;
+    padding: 79px 0 65px 0;
+    margin-bottom: 27px;
+    border-bottom: 1px solid #dae4e9;
     display: flex;
   }
 
-  &__item {
+  &__box {
     max-width: 270px;
     width: 100%;
     margin-right: 30px;
@@ -33,16 +32,37 @@
     display: block;
   }
 
+  &__phone {
+    line-height: 31px;
+  }
+
+  &__address,
+  &__email {
+    display: inline-block;
+    font-style: normal;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+
+  &__phone:hover,
+  &__email:hover {
+    color: $black;
+    transition: color 0.7s;
+  }
+
   &__title {
+    font-family: "DMSans", sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: $footer-title;
     text-transform: uppercase;
     padding-top: 14px;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
   }
 
   &__link {
+    font-size: 14px;
+    line-height: 24px;
     display: block;
     margin-bottom: 8px;
     transition: color 0.7s;
@@ -61,20 +81,20 @@
     display: flex;
   }
 
-  &__form-label {
+  &__form-send {
     font-size: 0;
   }
 
-  &__form-input {
+  &__form-email {
     max-width: 170px;
     width: 100%;
     padding: 4px 12px;
-    background-color: $footer-input;
+    background-color: #fef7f0;
     font-size: 12px;
     border: none;
 
     &::placeholder {
-      color: $footer-input-placeholder;
+      color: #234969;
       font-size: 12px;
     }
   }
@@ -98,18 +118,25 @@
   &__bottom {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 28px;
   }
+}
 
-  &__menu-list {
+.menu--footer {
+  padding: 0;
+  margin-right: -10px;
+}
+
+.menu {
+  &__list--footer {
     display: flex;
   }
 
-  &__menu-item {
-    margin-right: 10px;
+  &__item--footer {
+    margin-right: 7px;
   }
 
-  &__menu-link {
+  &__link--footer {
     padding: 1px 10px;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
@@ -125,18 +152,5 @@
       border-bottom: 1px solid $black;
     }
   }
-}
 
-.address {
-  &__item {
-    font-style: normal;
-    line-height: 24px;
-    margin-bottom: 10px;
-  }
-
-  &__phone:hover,
-  &__email:hover {
-    color: $black;
-    transition: color 0.7s;
-  }
 }

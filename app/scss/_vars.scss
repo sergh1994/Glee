@@ -1,17 +1,19 @@
 $accent: #a3bbc8;
 $text-accent: #585858;
 $header-nav: #436372;
-$bar-bg: #fcd7b6;
+$bg: #fcd7b6;
 $bar-icon: #243f4d;
-$bar-btn-search: #edf1f4;
-$bar-decor: #fde7d3;
 $footer-link: #7b7b7b;
-$footer-border: #dae4e9;
 $footer-title: #1f2044;
-$footer-input: #fef7f0;
-$footer-input-placeholder: #234969;
-$dots-active-num: #243f4d;
-$dots-num: #667983;
-$dots-bg: #fde3cc;
 $black: #000;
 $white: #fff;
+
+
+
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
